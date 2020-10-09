@@ -5,8 +5,8 @@
   "manifest_version": 2,
   "content_scripts" : [
     {
-      "matches" : ["<all_urls>"],
-      "js" : ["js/content.js"]
+      "matches" : ["https://*.amazon.com/*"],
+      "js" : ["node_modules/jquery/dist/jquery.slim.js","js/content.js"]
     }
   ]
 }
