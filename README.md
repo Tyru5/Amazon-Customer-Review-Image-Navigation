@@ -61,6 +61,14 @@ Tyrus Malmstrom - [@TirustheVirus](https://twitter.com/TirustheVirus) - tyrusm@h
 Project Link: [https://github.com/Tyru5/chrome-extension](https://github.com/Tyru5/chrome-extension)
 
 
+## Legal Information
+
+Amazon and the Amazon logo are trademarks of Amazon.com, Inc. or its affiliates.  
+The extension was not created or endorsed by Amazon.
+
+© 2020 Amazon Customer Image Navigate. All Rights Reserved.
+
+
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
