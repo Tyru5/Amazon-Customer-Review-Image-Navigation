@@ -1,0 +1,50 @@
+// popup.html
+#popup {
+  font-size: 14px;
+  margin: 0;
+  min-width: 18em;
+
+  .orange {
+    color: $orange;
+  }
+
+  ul,
+  li,
+  p {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  ul {
+    text-align: center;
+
+    li {
+      background-color: $white;
+      cursor: pointer;
+      padding: 3px;
+      transition: background-color .25s ease;
+
+      &:hover {
+        background-color: $list-hover;
+      }
+    }
+
+    .fa-fw {
+      margin-right: 5px;
+    }
+
+    .fa-check {
+      color: $green;
+    }
+
+    .fa-info {
+      color: $blue;
+    }
+
+    .fa-times,
+    .fa-heart {
+      color: $red;
+    }
+  }
+}

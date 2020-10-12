@@ -1,7 +1,16 @@
 {
   "name": "chrome-extension",
   "version": "1.0.0",
+  "scripts": {
+    "build": "parcel build ./src/html/popup.html -d ./dist/ --cache-dir ./src/dist/cache --detailed-report 10",
+    "dev": "parcel serve ./src/html/popup.html"
+  },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.0",
     "jquery": "^3.5.1"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.27.0"
   }
 }
