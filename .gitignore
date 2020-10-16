@@ -30,6 +30,7 @@ node_modules
 npm-debug.log
 
 .history/
+.cache/
 _temp
 dist/
 .idea/
