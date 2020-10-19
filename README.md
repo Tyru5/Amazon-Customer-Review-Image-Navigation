@@ -12,9 +12,6 @@ First Chrome Extension.
 [![MIT License][license-shield]][license-url]
 
 
-<!-- PROJECT LOGO -->
-<!-- Dont have one yet, waiting for Linnea -->
-
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
@@ -29,7 +26,7 @@ First Chrome Extension.
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Amazon Customer Image Navigation][product-screenshot]](https://github.com/Tyru5/Amazon-Customer-Image-Navigation)
 
 Have you ever wanted to navigate amazon's review images by using the keyboard? Well look no further,
 now you can! This was an annoyance of mine, and thus my full motivation for implementing this simple
@@ -58,7 +55,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## Contact
 Tyrus Malmstrom - [@TirustheVirus](https://twitter.com/TirustheVirus) - tyrusm@hotmail.com
 
-Project Link: [https://github.com/Tyru5/chrome-extension](https://github.com/Tyru5/chrome-extension)
+Project Link: [https://github.com/Tyru5/chrome-extension](https://github.com/Tyru5/Amazon-Customer-Image-Navigation)
 
 
 ## Legal Information
@@ -74,4 +71,4 @@ The extension was not created or endorsed by Amazon.
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=flat-square
 [license-url]: https://github.com/Tyru5/chrome-extension/blob/main/LICENSE
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: ./assets/Amazon.Integration.Icons/Amazon.Integration.Icons/Gradiant/icon_128x128.png
