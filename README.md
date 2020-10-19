@@ -45,7 +45,7 @@ intuitive, seamless manner -- by allowing the user to use the left and right arr
 to close the pop-up modal by hitting the Escape key.
 
 ### Built With
-This chrome extension was built using vanilla JS and jQuery!
+This chrome extension was built with the following libraries and tools :
 * [FontAwesome](https://fontawesome.com/)
 * [iziToast](https://izitoast.marcelodolza.com/)
 * [JQuery](https://jquery.com)
