@@ -11,7 +11,9 @@ First Chrome Extension.
 -->
 [![MIT License][license-shield]][license-url]
 
-
+<div style="text-align:center">
+  <img width="128" height="128" src="https://github.com/Tyru5/Amazon-Customer-Image-Navigation/blob/main/assets/Amazon.Integration.Icons/Amazon.Integration.Icons/Gradiant/icon_128x128.png?raw=true">
+</div>
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
