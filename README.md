@@ -1,6 +1,3 @@
-# Chrome Extension for Navigating Amazon customer review images.
-First Chrome Extension.
-
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
@@ -14,6 +11,19 @@ First Chrome Extension.
 <p align="center">
 <img width="128" height="128" src="https://github.com/Tyru5/Amazon-Customer-Image-Navigation/blob/main/assets/Amazon.Integration.Icons/Amazon.Integration.Icons/Gradiant/icon_128x128.png?raw=true">
 </p>
+
+<h3 align="center">Amazon Customer Image Navigation</h3>
+
+  <p align="center">
+    Amazon Customer Image Navigation Chrome Extension
+    <br />
+    <a href="https://github.com/Tyru5/Amazon-Customer-Image-Navigation/blob/main/README.md"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/Tyru5/Amazon-Customer-Image-Navigation/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/Tyru5/Amazon-Customer-Image-Navigation/issues">Request Feature</a>
+  </p>
 
 
 <!-- TABLE OF CONTENTS -->
@@ -63,7 +73,7 @@ Project Link: [https://github.com/Tyru5/chrome-extension](https://github.com/Tyr
 Amazon and the Amazon logo are trademarks of Amazon.com, Inc. or its affiliates.  
 The extension was not created or endorsed by Amazon.
 
-© 2020 Amazon Customer Image Navigate. All Rights Reserved.
+© 2020 Amazon Customer Image Navigation. All Rights Reserved.
 
 
 
