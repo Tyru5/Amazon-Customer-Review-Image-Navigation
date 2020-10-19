@@ -27,9 +27,6 @@ First Chrome Extension.
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-[![Amazon Customer Image Navigation][product-screenshot]](https://github.com/Tyru5/Amazon-Customer-Image-Navigation)
-
 Have you ever wanted to navigate amazon's review images by using the keyboard? Well look no further,
 now you can! This was an annoyance of mine, and thus my full motivation for implementing this simple
 chrome extension. 😅 Just a simple solution, to a daily occurrence / observation of mine. 
