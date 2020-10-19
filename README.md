@@ -63,10 +63,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- CONTACT -->
 ## Contact
-Tyrus Malmstrom - [@TirustheVirus](https://twitter.com/TirustheVirus) - tyrusm@hotmail.com
-Linnea Malmstrom - [Dribble](https://dribbble.com/LinneasMaximus) - rockstarangel1@hotmail.com
-
-Project Link: [https://github.com/Tyru5/chrome-extension](https://github.com/Tyru5/Amazon-Customer-Image-Navigation)
+* Tyrus Malmstrom - [@TirustheVirus](https://twitter.com/TirustheVirus) - tyrusm@hotmail.com
+* Linnea Malmstrom - [Dribble](https://dribbble.com/LinneasMaximus) - rockstarangel1@hotmail.com
+* Project Link: [https://github.com/Tyru5/chrome-extension](https://github.com/Tyru5/Amazon-Customer-Image-Navigation)
 
 
 ## Legal Information
