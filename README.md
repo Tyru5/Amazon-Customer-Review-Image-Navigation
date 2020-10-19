@@ -30,7 +30,6 @@
 * [About the Project](#about-the-project)
   * [Built With](#built-with)
   * [Installation](#installation)
-* [Usage](#usage)
 * [License](#license)
 * [Contact](#contact)
 
