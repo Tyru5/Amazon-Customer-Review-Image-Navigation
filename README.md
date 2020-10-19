@@ -13,9 +13,8 @@
 </p>
 
 <h3 align="center">Amazon Customer Image Navigation</h3>
-
   <p align="center">
-    Amazon Customer Image Navigation Chrome Extension
+    A Chrome Extension to make your Amazon experience better! :)
     <br />
     <a href="https://github.com/Tyru5/Amazon-Customer-Image-Navigation/blob/main/README.md"><strong>Explore the docs »</strong></a>
     <br />
@@ -24,7 +23,6 @@
     ·
     <a href="https://github.com/Tyru5/Amazon-Customer-Image-Navigation/issues">Request Feature</a>
   </p>
-
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
