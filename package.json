@@ -2,11 +2,21 @@
   "name": "chrome-extension",
   "version": "1.0.0",
   "scripts": {
-    "build": "parcel build ./src/html/popup.html -d ./dist/ --cache-dir ./src/dist/cache --detailed-report 10",
-    "dev": "parcel serve ./src/html/popup.html"
+    "clean-dist": "rm -rf ./dist",
+    "clean-nm": "rm -rf node_modules",
+    "clean-all": "rm -rf ./dist ./node_modules",
+    "build-nav-content-script-js": "parcel build src/js/navigation-content-script.js -o navigation-content-script.min.js -d ./dist/js --cache-dir ./dist/cache --detailed-report 10",
+    "build-toast-content-script-js": "parcel build src/js/toast-content-script.js -o toast-content-script.min.js -d ./dist/js --cache-dir ./dist/cache --detailed-report 10",
+    "build-background-js": "parcel build ./src/js/background.js -o background.min.js -d ./dist/js --cache-dir ./dist/cache --detailed-report 10",
+    "build-popup-js": "parcel build ./src/js/popup.js -o popup.min.js -d ./dist/js --cache-dir ./dist/cache --detailed-report 10",
+    "build-js-assets": "npm run build-nav-content-script-js && npm run build-toast-content-script-js && npm run build-background-js && npm run build-popup-js",
+    "build-scss-assets": "parcel build ./src/scss/main.scss -o main.css -d ./dist/scss --cache-dir ./dist/cache --detailed-report 10",
+    "build-all": "npm run build-js-assets && npm run build-scss-assets",
+    "watch-dev": "parcel serve ./src/html/popup.html"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.12.0",
+    "izitoast": "^1.4.0",
     "jquery": "^3.5.1"
   },
   "devDependencies": {

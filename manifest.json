@@ -5,22 +5,45 @@
   "version": "0.0.0.1",
   "description": "Navigate Amazon review images with the keyboard arrows.",
   "author": "Tyrus Malmstrom",
-  "homepage_url" : "https://github.com/Tyru5/chrome-extension",
+  "homepage_url" : "https://github.com/Tyru5/Amazon-Customer-Image-Navigation",
   "icons" : {
     "16" : "assets/Amazon.Integration.Icons/Amazon.Integration.Icons/Gradiant/icon_16x16.png",
     "48" : "assets/Amazon.Integration.Icons/Amazon.Integration.Icons/Gradiant/icon_48x48.png",
     "128": "assets/Amazon.Integration.Icons/Amazon.Integration.Icons/Gradiant/icon_128x128.png"
   },
+  "permissions" : [
+    "storage",
+    "activeTab"
+  ],
   "content_scripts" : [
     {
       "matches" : ["*://*.amazon.com/*"],
-      "js" : ["node_modules/jquery/dist/jquery.slim.js","src/js/content.js"],
+      "js" : [
+        "node_modules/jquery/dist/jquery.slim.js" ,
+        "./dist/js/navigation-content-script.min.js"
+      ],
+      "run_at" : "document_idle"
+    },
+    {
+      "matches" : ["<all_urls>"],
+      "css": [
+        "node_modules/izitoast/dist/css/iziToast.min.css",
+        "assets/css/all.min.css"
+      ],
+      "js" : [
+        "node_modules/izitoast/dist/js/iziToast.min.js",
+        "./dist/js/toast-content-script.min.js"
+      ],
       "run_at" : "document_idle"
     }
   ],
+  "web_accessible_resources": [
+    "assets/css/all.min.css",
+    "assets/webfonts/*"
+  ],
   "background" : {
     "scripts" : [
-      "src/js/background.js"
+      "./dist/js/background.min.js"
     ],
     "persistent": true
   },
@@ -30,6 +53,7 @@
       "48" : "assets/Amazon.Integration.Icons/Amazon.Integration.Icons/Gradiant/icon_48x48.png",
       "128": "assets/Amazon.Integration.Icons/Amazon.Integration.Icons/Gradiant/icon_128x128.png"
     },
-    "default_popup" : "src/html/popup.html"
+    "default_title": "Amazon Customer Image Navigation",
+    "default_popup" : "./src/html/popup.html"
   }
 }
