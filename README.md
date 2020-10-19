@@ -47,12 +47,14 @@ to close the pop-up modal by hitting the Escapse key.
 ### Built With
 This chrome extension was built using vanilla JS and jQuery!
 * [JQuery](https://jquery.com)
+* [FontAwesome](https://fontawesome.com/)
+* [iziToast](https://izitoast.marcelodolza.com/)
+* [Parcel](https://parceljs.org/)
 
 
 ### Installation
 1. Navigate to the Chrome Webstore and download extension!
       * [https://example.com](https://example.com)
-
 
 <!-- LICENSE -->
 ## License
@@ -62,6 +64,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 Tyrus Malmstrom - [@TirustheVirus](https://twitter.com/TirustheVirus) - tyrusm@hotmail.com
+Linnea Malmstrom - [Dribble](https://dribbble.com/LinneasMaximus) - rockstarangel1@hotmail.com
 
 Project Link: [https://github.com/Tyru5/chrome-extension](https://github.com/Tyru5/Amazon-Customer-Image-Navigation)
 
