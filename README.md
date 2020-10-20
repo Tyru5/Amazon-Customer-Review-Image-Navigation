@@ -62,7 +62,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 * Tyrus Malmstrom - [@TirustheVirus](https://twitter.com/TirustheVirus) - tyrusm@hotmail.com
-* Linnea Malmstrom - [Dribble](https://dribbble.com/LinneasMaximus) - linnea-malmstrom@gmail.com
+* Linnea Malmstrom - [Dribble](https://dribbble.com/LinneasMaximus) - linnea-malmstrom@hotmail.com
 * Project Link: [https://github.com/Tyru5/Amazon-Customer-Image-Navigation](https://github.com/Tyru5/Amazon-Customer-Image-Navigation)
 
 
