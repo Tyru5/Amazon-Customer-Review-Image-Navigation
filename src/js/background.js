@@ -20,7 +20,6 @@ chrome.runtime.onInstalled.addListener(() => {
  */
 chrome.storage.local.get( [ 'extensionStatus' ], result => {
     extensionStatus = result.extensionStatus || 'enabled';
-
     // Update the extension status in the users local storage:
     chrome.storage.local.set( { extensionStatus } );
     updateBrowserToolbarExtensionIcon();
@@ -32,13 +31,12 @@ chrome.runtime.onMessage.addListener(( request, sender, sendResponse ) => {
 
     // Get Extension Status //
     if( request.getExtensionStatus ) {
-        sendResponse({ extensionStatus });
-        return false;
+        sendResponse({ extensionStatus: extensionStatus });
     }
 
     // Toggle Status //
     if( request.toggleStatus ) {
-        const status = updateExtensionStatus( extensionStatus );
+        const status = updateExtensionStatus();
         sendResponse({ extensionStatus: status });
     }
 
@@ -99,6 +97,5 @@ function updateExtensionStatus() {
     updateBrowserToolbarExtensionIcon();
     return extensionStatus;
 }
-
 
 })();
