@@ -21,7 +21,6 @@ chrome.runtime.sendMessage({ getExtensionStatus: true }, response => {
 function executeNavigationEvents( extensionStatus ) {
     chrome.runtime.onMessage.addListener(( request, sender, sendResponse ) => {
         if( request.extensionStatus === 'disabled' ) {
-            console.log('disabled');
             jQuery( window ).unbind( 'keydown', handleKeyDownEvents );
             return false;
         } else {
