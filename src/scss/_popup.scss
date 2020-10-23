@@ -1,21 +1,21 @@
 #popup {
 
   margin: 0;
-  width: 170px;
-  height: 133px;
+  width: 160px;
+  height: 112px;
 
   .container {
 
     position: fixed;
-    top: 24%;
+    top: 20%;
     left: 19%;
     transform: translate(-50%,-50%);
-    width: 50px;
+    width: 59px;
     height: 50px;
     display: grid;
-    grid-template-columns: 77px 77px;
+    grid-template-columns: 82px 82px;
 
-    .box{
+    .box {
 
       background-color: $white;
       padding: 20px;
@@ -30,25 +30,31 @@
         .fa-heart {
           border-radius: 50%;
           box-shadow: 0 0 0 0 rgba($red, 1);
-          animation: pulse-red 2s infinite;
+          animation: pulse-red 1s infinite;
         }
 
         .fa-code {
           border-radius: 50%;
           box-shadow: 0 0 0 0 rgba($black, 1);
-          animation: pulse-black 2s infinite;
+          animation: pulse-black 1s infinite;
         }
 
         .fa-check {
           border-radius: 50%;
           box-shadow: 0 0 0 0 rgba($green, 1);
-          animation: pulse-green 2s infinite;
+          animation: pulse-green 1s infinite;
         }
 
         .fa-info {
           border-radius: 50%;
           box-shadow: 0 0 0 0 rgba($blue, 1);
-          animation: pulse-blue 2s infinite;
+          animation: pulse-blue 1s infinite;
+        }
+
+        .fa-times {
+          border-radius: 50%;
+          box-shadow: 0 0 0 0 rgba($red, 1);
+          animation: pulse-red 1s infinite;
         }
 
       }
@@ -60,6 +66,17 @@
 
         .fa-check {
           color: $green;
+        }
+
+      }
+
+      &.disabled {
+
+        @extend %border-default;
+        border-style: none solid solid none;
+
+        .fa-times {
+          color: $red;
         }
 
       }
