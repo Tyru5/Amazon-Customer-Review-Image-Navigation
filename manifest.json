@@ -25,7 +25,7 @@
       "run_at" : "document_idle"
     },
     {
-      "matches" : ["*://*.amazon.com/*"],
+      "matches" : ["<all_urls>"],
       "css": [
         "node_modules/izitoast/dist/css/iziToast.min.css",
         "assets/css/all.min.css"
