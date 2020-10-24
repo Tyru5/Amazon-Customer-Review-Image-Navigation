@@ -34,8 +34,8 @@ developerInfo.click( ( event ) => {
     window.open( developerInfoUrl , '_blank');
 });
 developerSupport.click( ( event ) => {
-    const developerSupportUrl = 'https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=D48XVG7ZFCBML' +
-                                '&item_name=Amazon+Customer+Image+Navigation&currency_code=USD'
+    const developerSupportUrl = 'https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=D48XVG7ZFCBML&' +
+                                'item_name=Amazon+Customer+Image+Navigation+Chrome+Extension&currency_code=USD';
     window.open( developerSupportUrl, '_blank');
 });
 
