@@ -68,6 +68,7 @@ function updateBrowserToolbarExtensionIcon() {
                 128: 'assets/Amazon.Integration.Icons/Amazon.Integration.Icons/Gradiant/icon_128x128disable.png',
             },
         });
+        return false;
     }
     // Enabled Icon Image :
     chrome.browserAction.setIcon({

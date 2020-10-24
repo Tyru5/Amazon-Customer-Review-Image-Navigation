@@ -17,7 +17,7 @@
   ],
   "content_scripts" : [
     {
-      "matches" : ["*://*.amazon.com/*"],
+      "matches" : ["https://www.amazon.com/*", "https://smile.amazon.com/*"],
       "js" : [
         "node_modules/jquery/dist/jquery.slim.js" ,
         "./dist/js/navigation-content-script.min.js"
