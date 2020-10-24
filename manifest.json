@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "Amazon Customer Image Navigation",
+  "name": "Amazon Customer Review Image Navigation",
   "short_name" : "Amazon Customer Review Image Navigation",
   "version": "0.0.0.1",
   "description": "Navigate Amazon customer review images with the keyboard arrows.",
