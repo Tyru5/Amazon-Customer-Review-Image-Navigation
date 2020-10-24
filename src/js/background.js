@@ -6,17 +6,17 @@
 
 'use strict';
 
-(function IIFE() {
+( function IIFE() {
 
 let extensionStatus;
 
 // ############################ Main chrome runtime events ############################
 chrome.runtime.onInstalled.addListener(() => {
-    console.log('I am in the background.js file and this should run as soon as the extension is installed!');
+    console.log('If you are reading / inspecting this -- I hope you are doing well and having a nice day! :)');
 });
 
 /**
- * Get initial status of chrome extension.
+ * Get initial status of chrome extension from user's local storage, if it hasn't been saved, set the value.
  */
 chrome.storage.local.get( [ 'extensionStatus' ], result => {
     extensionStatus = result.extensionStatus || 'enabled';
@@ -26,18 +26,16 @@ chrome.storage.local.get( [ 'extensionStatus' ], result => {
 });
 
 
-// ############################ Message event listeners ############################
 chrome.runtime.onMessage.addListener(( request, sender, sendResponse ) => {
-
-    // Get Extension Status //
+    // Handle retrieving the initial extension status :
     if( request.getExtensionStatus ) {
-        sendResponse({ extensionStatus: extensionStatus });
+        sendResponse({ extensionStatus: extensionStatus } );
     }
 
-    // Toggle Status //
+    // Handle if user toggled the extension status :
     if( request.toggleStatus ) {
         const status = updateExtensionStatus();
-        sendResponse({ extensionStatus: status });
+        sendResponse({ extensionStatus: status } );
     }
 
     if( request.action === 'showToast' ) {
@@ -51,7 +49,7 @@ chrome.runtime.onMessage.addListener(( request, sender, sendResponse ) => {
             });
         });
     }
-
+    return true; // Required to keep message port open.
 });
 
 
@@ -70,10 +68,7 @@ function updateBrowserToolbarExtensionIcon() {
                 128: 'assets/Amazon.Integration.Icons/Amazon.Integration.Icons/Gradiant/icon_128x128disable.png',
             },
         });
-
-        return false;
     }
-
     // Enabled Icon Image :
     chrome.browserAction.setIcon({
         path: {
@@ -82,8 +77,6 @@ function updateBrowserToolbarExtensionIcon() {
             128: 'assets/Amazon.Integration.Icons/Amazon.Integration.Icons/Gradiant/icon_128x128.png',
         },
     });
-
-    return false;
 }
 
 /**

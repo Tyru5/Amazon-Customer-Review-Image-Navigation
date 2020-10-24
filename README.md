@@ -49,6 +49,7 @@ This chrome extension was built with the following libraries and tools :
 * [iziToast](https://izitoast.marcelodolza.com/)
 * [JQuery](https://jquery.com)
 * [Parcel](https://parceljs.org/)
+* [Tippy.js](https://atomiks.github.io/tippyjs/)
 
 ### Installation
 1. Navigate to the Chrome Webstore and download extension!

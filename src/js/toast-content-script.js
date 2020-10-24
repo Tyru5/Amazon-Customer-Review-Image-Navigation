@@ -5,7 +5,7 @@
 
 'use strict';
 
-(function IIFE() {
+( function IIFE() {
 
 /**
  * chrome runtime onMessage event listener to handle the communication channel from data being sent from the background.js
@@ -17,15 +17,12 @@ chrome.runtime.onMessage.addListener(( request, sender, sendResponse ) => {
         iziToast.info({
             title: `Extension ${ request.extensionStatus }!`,
             message: `Click Again to ${status} it.`,
-            // icon: 'fas fa-times',
             position : 'topCenter',
-            // theme : 'dark',
-            // progressBarColor: 'rgb(0, 255, 184)',
-            onOpening: function(instance, toast){
-                console.info('callback abriu!');
+            onOpening: function( instance, toast ){
+                // nothing for now.
             },
-            onClosing: function(instance, toast, closedBy){
-                console.info('closedBy: ' + closedBy); // tells if it was closed by 'drag' or 'button'
+            onClosing: function( instance, toast, closedBy ){
+                // nothing for now.
             }
         });
         sendResponse({ extensionStatus : request.extensionStatus } );
