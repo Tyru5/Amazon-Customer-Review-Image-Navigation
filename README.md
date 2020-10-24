@@ -12,16 +12,16 @@
 <img width="128" height="128" src="https://github.com/Tyru5/Amazon-Customer-Image-Navigation/blob/main/assets/Amazon.Integration.Icons/Amazon.Integration.Icons/Gradiant/icon_128x128.png?raw=true">
 </p>
 
-<h3 align="center">Amazon Customer Image Navigation</h3>
+<h3 align="center">Amazon Customer Review Image Navigation</h3>
   <p align="center">
     A Chrome Extension to make your Amazon experience better! :)
     <br />
-    <a href="https://github.com/Tyru5/Amazon-Customer-Image-Navigation/blob/main/README.md"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Tyru5/Amazon-Customer-Review-Image-Navigation/blob/main/README.md"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/Tyru5/Amazon-Customer-Image-Navigation/issues">Report Bug</a>
+    <a href="https://github.com/Tyru5/Amazon-Customer-Review-Image-Navigation/issues">Report Bug</a>
     ·
-    <a href="https://github.com/Tyru5/Amazon-Customer-Image-Navigation/issues">Request Feature</a>
+    <a href="https://github.com/Tyru5/Amazon-Customer-Review-Image-Navigation/issues">Request Feature</a>
   </p>
 
 <!-- TABLE OF CONTENTS -->
@@ -35,13 +35,13 @@
 
 <!-- About the project -->
 ## About The Project
-Have you ever wanted to navigate Amazon's review images by using the keyboard? Well look no further,
-now you can! This was an annoyance of mine, and thus my full motivation for implementing this simple
-chrome extension. 😅 Just a simple solution, to a daily occurrence / observation of mine. 
+Have you ever wanted to navigate Amazon's customer review images by using the keyboard? Well look no further,
+now you can! This was an annoyance of mine, and thus my full motivation for implementing this chrome extension. 
+😅 Just a simple solution, to a daily occurrence / observation of mine. 
 
-This is a simple chrome extension that allows the user to navigate amazon customer image reviews in a more
-intuitive, seamless manner -- by allowing the user to use the left and right arrow on the keyboard. It also allows the user
-to close the pop-up modal by hitting the Escape key.
+This is a Chrome extension that allows you to navigate Amazon's customer review images in a more
+intuitive, seamless manner. It allows you to use the left and right arrows on your keyboard as well as allowing you
+to close the image pop-up modal by hitting the Escape key.
 
 ### Built With
 This chrome extension was built with the following libraries and tools :
@@ -59,19 +59,18 @@ This chrome extension was built with the following libraries and tools :
 ## License
 Distributed under the MIT License. See `LICENSE` for more information.
 
-
 <!-- CONTACT -->
 ## Contact
 * Tyrus Malmstrom - [@TirustheVirus](https://twitter.com/TirustheVirus) - tyrusm@hotmail.com
 * Linnea Malmstrom - [Dribble](https://dribbble.com/LinneasMaximus) - linnea-malmstrom@hotmail.com
-* Project Link: [https://github.com/Tyru5/Amazon-Customer-Image-Navigation](https://github.com/Tyru5/Amazon-Customer-Image-Navigation)
+* Project Link: [https://github.com/Tyru5/Amazon-Customer-Review-Image-Navigation](https://github.com/Tyru5/Amazon-Customer-Review-Image-Navigation)
 
 
 ## Legal Information
 Amazon and the Amazon logo are trademarks of Amazon.com, Inc. or its affiliates.  
 The extension was not created or endorsed by Amazon.
 
-© 2020 Amazon Customer Image Navigation. All Rights Reserved.
+© 2020 Amazon Customer Review Image Navigation. All Rights Reserved.
 
 
 <!-- MARKDOWN LINKS & IMAGES -->

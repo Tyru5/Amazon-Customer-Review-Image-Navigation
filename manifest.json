@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
   "name": "Amazon Customer Image Navigation",
-  "short_name" : "Amazon Customer Image Navigation",
+  "short_name" : "Amazon Customer Review Image Navigation",
   "version": "0.0.0.1",
-  "description": "Navigate Amazon review images with the keyboard arrows.",
+  "description": "Navigate Amazon customer review images with the keyboard arrows.",
   "author": "Tyrus Malmstrom",
   "homepage_url" : "https://github.com/Tyru5/Amazon-Customer-Image-Navigation",
   "icons" : {
@@ -53,7 +53,7 @@
       "48" : "assets/Amazon.Integration.Icons/Amazon.Integration.Icons/Gradiant/icon_48x48.png",
       "128": "assets/Amazon.Integration.Icons/Amazon.Integration.Icons/Gradiant/icon_128x128.png"
     },
-    "default_title": "Amazon Customer Image Navigation",
+    "default_title": "Amazon Customer Review Image Navigation",
     "default_popup" : "./src/html/popup.html"
   }
 }
