@@ -28,7 +28,7 @@ chrome.storage.local.get( [ 'extensionStatus' ], result => {
 
 chrome.runtime.onMessage.addListener(( request, sender, sendResponse ) => {
     // Handle retrieving the initial extension status :
-    if( request.getExtensionStatus ) {
+    if( request.setExtensionStatus ) {
         sendResponse({ extensionStatus: extensionStatus } );
     }
 
@@ -36,22 +36,6 @@ chrome.runtime.onMessage.addListener(( request, sender, sendResponse ) => {
     if( request.toggleStatus ) {
         const status = updateExtensionStatus();
         sendResponse({ extensionStatus: status } );
-    }
-
-    if( request.action === 'showToast' ) {
-        chrome.tabs.query({ active: true, currentWindow: true }, function ( tabs) {
-            chrome.tabs.insertCSS( tabs[0].id, { file: './assets/css/iziToast.css', runAt : 'document_idle' }, function() {
-                chrome.tabs.executeScript( tabs[0].id, { file: './dist/js/toast-content-script.min.js', runAt : 'document_idle' }, function () {
-                    chrome.tabs.sendMessage( tabs[0].id, { extensionStatus : extensionStatus }, ( response ) => {
-                        if( response ) {
-                            if( response.extensionStatus ) {
-                                sendResponse({ extensionStatus : response.extensionStatus } );
-                            }
-                        }
-                    });
-                });
-            });
-        });
     }
     return true; // Required to keep message port open.
 });

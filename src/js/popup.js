@@ -14,7 +14,7 @@ import tippy from 'tippy.js';
 /**
  * Set the initial extension status, are we running or not? Yup! We are :)
  */
-chrome.runtime.sendMessage({ getExtensionStatus: true }, response => {
+chrome.runtime.sendMessage({ setExtensionStatus: true }, response => {
     setElementsStatus( response.extensionStatus );
 });
 
@@ -42,13 +42,36 @@ developerSupport.click( handleDeveloperSupportClick );
 
 /**
  * Function that handles the user's click to toggle enabling / disabling of the chrome extension.
- * functionality.
+ *
+ * Also Programmatically injects other content-script(s) that handle displaying the toast informing the user of the
+ * extension running state.
  */
 function handleChromeExtensionStatusClick() {
     chrome.runtime.sendMessage({ action: 'showToast', toggleStatus : true }, response => {
+
         if( response ) {
             setElementsStatus( response.extensionStatus );
+            chrome.tabs.query({active: true, currentWindow: true}, function (tabs) {
+                chrome.tabs.insertCSS( tabs[0].id, {
+                    file: './assets/css/iziToast.css',
+                    runAt: 'document_idle'
+                }, function () {
+                    chrome.tabs.executeScript( tabs[0].id, {
+                        file: './assets/js/iziToast.js',
+                        runAt: 'document_idle'
+                    }, function () {
+                        chrome.tabs.executeScript( tabs[0].id, {
+                            code: `var extensionStatus = '${ response.extensionStatus}'` }, function() {
+                            chrome.tabs.executeScript( tabs[0].id, {
+                                file: './dist/js/toast-content-script.min.js',
+                                runAt: 'document_idle'
+                            });
+                        });
+                    });
+                });
+            });
         }
+
     });
 }
 
