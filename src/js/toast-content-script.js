@@ -10,7 +10,7 @@
     // Show toast informing the user of extension status :
     const status = ( extensionStatus === 'disabled') ? 'enable' : 'disable';
     iziToast.info({
-        title: `Extension ${ status }!`,
+        title: `Extension ${ extensionStatus[0].toUpperCase() + extensionStatus.substring(1) }!`,
         message: `Click again to ${ status } it.`,
         position: 'topCenter',
         onOpening: function (instance, toast) { },
