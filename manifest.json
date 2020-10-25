@@ -23,21 +23,10 @@
         "./dist/js/navigation-content-script.min.js"
       ],
       "run_at" : "document_idle"
-    },
-    {
-      "matches" : ["<all_urls>"],
-      "css": [
-        "node_modules/izitoast/dist/css/iziToast.min.css",
-        "assets/css/all.min.css"
-      ],
-      "js" : [
-        "node_modules/izitoast/dist/js/iziToast.min.js",
-        "./dist/js/toast-content-script.min.js"
-      ],
-      "run_at" : "document_idle"
     }
   ],
   "web_accessible_resources": [
+    "assets/css/iziToast.css",
     "assets/css/all.min.css",
     "assets/webfonts/*"
   ],

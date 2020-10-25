@@ -5,6 +5,8 @@
 
 'use strict';
 
+import iziToast from 'izitoast';
+
 ( function IIFE() {
 
 /**
