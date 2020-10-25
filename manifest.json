@@ -19,7 +19,7 @@
     {
       "matches" : ["https://www.amazon.com/*", "https://smile.amazon.com/*"],
       "js" : [
-        "node_modules/jquery/dist/jquery.slim.js" ,
+        "./assets/js/jquery.slim.min.js" ,
         "./dist/js/navigation-content-script.min.js"
       ],
       "run_at" : "document_idle"
