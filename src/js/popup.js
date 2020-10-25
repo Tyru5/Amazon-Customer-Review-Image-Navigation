@@ -47,7 +47,7 @@ developerSupport.click( handleDeveloperSupportClick );
  * extension running state.
  */
 function handleChromeExtensionStatusClick() {
-    chrome.runtime.sendMessage({ action: 'showToast', toggleStatus : true }, response => {
+    chrome.runtime.sendMessage({ toggleStatus : true }, response => {
 
         if( response ) {
             setElementsStatus( response.extensionStatus );
@@ -65,6 +65,8 @@ function handleChromeExtensionStatusClick() {
                             chrome.tabs.executeScript( tabs[0].id, {
                                 file: './dist/js/toast-content-script.min.js',
                                 runAt: 'document_idle'
+                            }, function () {
+                                chrome.tabs.sendMessage( tabs[0] .id, { extensionStatus : response.extensionStatus } );
                             });
                         });
                     });

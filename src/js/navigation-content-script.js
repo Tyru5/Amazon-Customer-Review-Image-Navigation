@@ -6,7 +6,7 @@
 ( function IIFE() {
 
 // Get chrome extension running status:
-chrome.runtime.sendMessage({ getExtensionStatus: true }, response => {
+chrome.runtime.sendMessage({ setExtensionStatus: true }, response => {
     const extensionStatus = response.extensionStatus;
     executeNavigationEvents( extensionStatus );
     return false;

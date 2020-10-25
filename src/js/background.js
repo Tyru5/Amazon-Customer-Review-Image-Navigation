@@ -37,6 +37,7 @@ chrome.runtime.onMessage.addListener(( request, sender, sendResponse ) => {
         const status = updateExtensionStatus();
         sendResponse({ extensionStatus: status } );
     }
+
     return true; // Required to keep message port open.
 });
 
