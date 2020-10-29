@@ -53,7 +53,7 @@ This chrome extension was built with the following libraries and tools :
 
 ### Installation
 1. Navigate to the Chrome Webstore and download extension!
-      * [https://example.com](https://example.com)
+      * [Chrome Webstore](https://chrome.google.com/webstore/detail/amazon-customer-review-im/fccjockkgecijdiogeebaefkdpkobmdo)
 
 <!-- LICENSE -->
 ## License
