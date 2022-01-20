@@ -31,6 +31,8 @@ npm-debug.log
 
 .history/
 .cache/
+.parcel-cache/
 _temp
 dist/
 .idea/
+desktop.ini

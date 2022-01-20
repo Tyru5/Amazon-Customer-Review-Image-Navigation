@@ -81,16 +81,16 @@ function handleChromeExtensionStatusClick() {
  * Helper function to handle click for extension information, redirects to README.md of github repo.
  */
 function handleExtensionInfoClick() {
-    const extensionInfoUrl = 'https://github.com/Tyru5/Amazon-Customer-Image-Navigation/blob/main/README.md';
-    window.open( extensionInfoUrl, '_blank');
+    const extensionInfoUrl = 'https://www.tiru5.com/portfolio/chrome-extension-project/';
+    window.open( extensionInfoUrl, '_blank', 'noopener');
 }
 
 /**
  * Helper function to handle click for developer information, redirects to my github profile!
  */
 function handleDeveloperInfoClick() {
-    const developerInfoUrl = 'https://github.com/Tyru5';
-    window.open( developerInfoUrl , '_blank');
+    const developerInfoUrl = 'https://www.tiru5.com/about-me/';
+    window.open( developerInfoUrl , '_blank', 'noopener');
 }
 
 /**
@@ -103,7 +103,7 @@ function handleDeveloperInfoClick() {
 function handleDeveloperSupportClick() {
     const developerSupportUrl = 'https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=D48XVG7ZFCBML&' +
         'item_name=Amazon+Customer+Image+Navigation+Chrome+Extension&currency_code=USD';
-    window.open( developerSupportUrl, '_blank');
+    window.open( developerSupportUrl, '_blank','noopener');
 }
 
 /**

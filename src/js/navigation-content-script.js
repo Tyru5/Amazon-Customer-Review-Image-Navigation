@@ -42,10 +42,10 @@ function executeNavigationEvents( extensionStatus ) {
 function handleKeyDownEvents( event ) {
     let key = event.key;
     if( key === 'ArrowRight' ) {
-        jQuery('.next-button').click();
+        jQuery('.cr-lightbox-navigator-container__next').click();
         return false;
     } else if( key === 'ArrowLeft' ) {
-        jQuery('.back-button').click();
+        jQuery('.cr-lightbox-navigator-container__back').click();
         return false;
     } else if( key === 'Escape' ) {
         jQuery('.a-button-close').click();
