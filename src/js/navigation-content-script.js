@@ -21,15 +21,15 @@ chrome.runtime.sendMessage({ setExtensionStatus: true }, response => {
 function executeNavigationEvents( extensionStatus ) {
     chrome.runtime.onMessage.addListener(( request, sender, sendResponse ) => {
         if( request.extensionStatus === 'disabled' ) {
-            jQuery( window ).unbind( 'keydown', handleKeyDownEvents );
+            jQuery( window ).off( 'keydown', handleKeyDownEvents );
             return false;
         } else {
-            jQuery( window ).keydown( handleKeyDownEvents );
+            jQuery( window ).on( 'keydown', handleKeyDownEvents );
             return false;
         }
     });
     if( extensionStatus === 'enabled' ) {
-        jQuery( window ).keydown( handleKeyDownEvents );
+        jQuery( window ).on('keydown', handleKeyDownEvents );
     }
 }
 
@@ -42,13 +42,13 @@ function executeNavigationEvents( extensionStatus ) {
 function handleKeyDownEvents( event ) {
     let key = event.key;
     if( key === 'ArrowRight' ) {
-        jQuery('.next-button').click();
+        jQuery('.next-button').trigger('click');
         return false;
     } else if( key === 'ArrowLeft' ) {
-        jQuery('.back-button').click();
+        jQuery('.back-button').trigger('click');
         return false;
     } else if( key === 'Escape' ) {
-        jQuery('.a-button-close').click();
+        jQuery('.a-button-close').trigger('click');
         return false;
     }
 }

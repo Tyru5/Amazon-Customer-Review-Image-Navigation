@@ -19,10 +19,18 @@ chrome.runtime.sendMessage({ setExtensionStatus: true }, response => {
 });
 
 // Different options the user could click on the default popup.html page :
-let enabledOption = jQuery('.enabled');
-let extensionInfo = jQuery('.extension-info');
-let developerInfo = jQuery('.developer-info');
-let developerSupport = jQuery('.developer-support');
+const [
+    enabledOption,
+    extensionInfo,
+    developerInfo,
+    developerSupport,
+] = [
+    jQuery('.enabled'), 
+    jQuery('.extension-info'),
+    jQuery('.developer-info'), 
+    jQuery('.developer-support'),
+];
+
 
 // Invoke Tippy.js with array of button elements :
 tippy( [ enabledOption[0], extensionInfo[0], developerInfo[0], developerSupport[0] ] );
@@ -35,10 +43,10 @@ developerInfo[0]._tippy.setProps( { animation : 'scale', content : 'Developer In
 developerSupport[0]._tippy.setProps( { animation : 'scale', content : 'Donate' } );
 
 // Register click methods for button options :
-enabledOption.click( handleChromeExtensionStatusClick );
-extensionInfo.click( handleExtensionInfoClick )
-developerInfo.click( handleDeveloperInfoClick );
-developerSupport.click( handleDeveloperSupportClick );
+enabledOption.on('click', handleChromeExtensionStatusClick);
+extensionInfo.on('click', handleExtensionInfoClick)
+developerInfo.on('click', handleDeveloperInfoClick);
+developerSupport.on('click',  handleDeveloperSupportClick);
 
 /**
  * Function that handles the user's click to toggle enabling / disabling of the chrome extension.

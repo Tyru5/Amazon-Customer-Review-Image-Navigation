@@ -12,8 +12,6 @@
     iziToast.info({
         title: `Extension ${ extensionStatus[0].toUpperCase() + extensionStatus.substring(1) }!`,
         position: 'topCenter',
-        onOpening: function (instance, toast) { },
-        onClosing: function (instance, toast, closedBy) { }
     });
 
 })();
