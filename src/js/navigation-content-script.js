@@ -4,8 +4,7 @@
  */
 
 jQuery(() => {
-    
-  console.log("in the ready event!");
+
   // Get chrome extension running status:
   chrome.runtime.sendMessage({ setExtensionStatus: true }, (response) => {
     const extensionStatus = response.extensionStatus;
